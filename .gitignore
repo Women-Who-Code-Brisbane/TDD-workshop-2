@@ -37,3 +37,5 @@ jspm_packages
 .node_repl_history
 js/.idea/
 java/.idea/
+java/target/classes/User.class
+java/target/
