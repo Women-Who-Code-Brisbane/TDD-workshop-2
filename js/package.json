@@ -1,0 +1,17 @@
+{
+  "name": "mocking-example-js",
+  "version": "1.0.0",
+  "description": "An example project to practice mocking\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DTDD with mocks",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js",
+    "test": "mocha"
+  },
+  "author": "Dominique Rolin - Women Who Code 2016",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "request": "^2.75.0"
+  }
+}
