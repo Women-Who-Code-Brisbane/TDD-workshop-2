@@ -47,3 +47,9 @@ c#/Properties/
 Tests/bin/
 Tests/obj/
 Tests/Properties/
+c_sharp/MockingExample/Tests/bin/
+c_sharp/MockingExample/Tests/obj/
+c_sharp/MockingExample/packages/
+c_sharp/MockingExample/App/bin/
+c_sharp/MockingExample/App/obj/
+c_sharp/MockingExample/App/packages/
