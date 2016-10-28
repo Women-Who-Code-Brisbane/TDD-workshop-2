@@ -5,7 +5,7 @@ public class AdminTests {
     private User user;
     @Before
     public void setUp() {
-        user = new User(true);
+        user = new User(new MovieService(), "Admin", true);
     }
 
     @Test
