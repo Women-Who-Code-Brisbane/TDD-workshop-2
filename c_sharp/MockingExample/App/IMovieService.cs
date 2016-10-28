@@ -4,7 +4,7 @@ using TDD_Mocking_Workshop;
 
 namespace MovieRentalApp
 {
-    interface IMovieService
+    public interface IMovieService
     {
         String GetAllMovies();
         String GetCurrentRentals(String username);
