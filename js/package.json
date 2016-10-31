@@ -1,7 +1,7 @@
 {
   "name": "mocking-example-js",
   "version": "1.0.0",
-  "description": "An example project to practice mocking\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DTDD with mocks",
+  "description": "An example project to practice mocking TDD with mocks",
   "main": "index.js",
   "scripts": {
     "run": "node index.js",

@@ -1,26 +1,32 @@
 var chai = require('chai')
   , expect = chai.expect
   , should = chai.should();
-var user = require('../src/user.js');
+
 
 describe('Regular User', function () {
+
+  // create a stub for the service
+  var service = {
+    getAllMovies: function(callback){
+      callback(null, [{title:'Alien'}, {title:'Alien2'}]);
+    }
+  };
+  // inject stub in user constructor
+  var user = require('../src/user.js')(service, "Dominique", false);
+
   it('should have a method to list all movies', function () {
-    expect(user.getAllMovies).to.be.a('function');
+    user.getAllMovies(function(err,data){
+      expect(err).to.equal(null);
+      expect(data).to.not.equal(null);
+      expect(data.length).to.equal(2);
+      expect(data[0].title).to.equal('Alien');
+      expect(data[1].title).to.equal('Alien2');
+    });
+
+
   });
   it('should have a method to rent a movie', function () {
-    expect(user.rentMovie).to.be.a('function');
   });
   it('should have a method to list current rentals', function () {
-    expect(user.getCurrentRentals).to.be.a('function');
-  });
-
-  describe('List all movies', function(){
-    // add code here
-  });
-  describe('Rent a Movie', function(){
-    // add code here
-  });
-  describe('List current rentals', function(){
-    // add code here
   });
 });
