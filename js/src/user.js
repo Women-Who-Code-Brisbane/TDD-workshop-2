@@ -6,7 +6,7 @@ module.exports = function User (service, username, isAdmin) {
   this.isAdmin = isAdmin;
 
   module.getAllMovies = function (callback) {
-    return service.getAllMovies(callback);
+    service.getAllMovies(callback);
   };
   module.getCurrentRentals = function (callback) {
     service.getCurrentRentals(this.username, callback);

@@ -3,7 +3,8 @@ var chai = require('chai')
   , should = chai.should();
 var admin = require('../src/admin.js');
 
-describe('Admin User', function () {
+// disabled admin tests: rename 'xdescribe' to 'describe' to enable again
+xdescribe('Admin User', function () {
   it('should have a method to add a movie', function () {
     expect(admin.addMovie).to.be.a('function');
   });

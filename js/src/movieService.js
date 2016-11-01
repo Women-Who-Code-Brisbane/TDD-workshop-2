@@ -4,6 +4,7 @@ function MovieService () {
   var serviceBaseUrl = 'http://hickory-snap.hyperdev.space/';
 
   this.getAllMovies = function (callback) {
+    console.log('Real movie service was called');
     request.get(
       serviceBaseUrl + 'all',
       function (err, res, json) {

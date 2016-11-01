@@ -9,9 +9,10 @@
   },
   "author": "Dominique Rolin - Women Who Code 2016",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.1.2",
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "sinon": "^1.17.6"
   }
 }
